@@ -4,11 +4,17 @@ public class DesignLinkedList {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		int[][] A = {{0, 1, -1},{1, 2, -1},{2, 3, 1}};
+		Solution obj = new Solution();
+		ListNode head = obj.solve(A);
+		while(head!=null) {
+			System.out.print(head.val+"-->");
+			head = head.next;
+		}
+		System.out.println("NULL");
 	}
 
 }
-
   
 class ListNode {
     public int val;

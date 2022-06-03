@@ -27,6 +27,20 @@ package com.learn.scaler.intermediate.hashing;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * N = len(A) # A is the input string
+Case 1: When the string is of EVEN len
+OBSERVATION: Each char must have its own duplucate for the input string A
+to be a palindrome
+Using XOR Property: x ^ x = 0
+if N & 1 == 0:
+xor = ord(A[0])
+for i in range(1, N):
+xor ^= ord(A[i])
+# Check if the XOR of all the chars in the string is 0
+if xor == 0: return 1 # A palindrome can be formed
+else: return 0
+ */
 public class CheckPalindrome {
 
 	public static void main(String[] args) {
