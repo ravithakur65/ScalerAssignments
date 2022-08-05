@@ -1,6 +1,6 @@
 package com.learn.scaler.beginner;
 
-public class Test {
+public class FindIquilibrium {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
