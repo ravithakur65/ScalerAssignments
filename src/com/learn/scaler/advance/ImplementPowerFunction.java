@@ -26,7 +26,8 @@ public class ImplementPowerFunction {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(pow(2, 3, 3));
+		//System.out.println(pow(2, 3, 3));
+		System.out.println(power2(2, 3, 3));
 	}
 
 	public static int pow(int A, int B, int C) {
@@ -46,4 +47,21 @@ public class ImplementPowerFunction {
 			return (int) ((A % C * p % C * p % C) + C) % C;
 		}
 	}
+	 public static int power2(int A, int B, int C) {
+	        if (A==0)
+	            return 0;
+	        if (B==0)
+	            return 1;
+	        long power= pow(A,B/2,C);
+	        long powMod= ((power%C)*(power%C))%C;
+	        if ((B&1)==0)
+	            return (int)powMod;
+	        else{
+	            int x= (int)((Long.valueOf(powMod%C)*Long.valueOf(A%C))%C);
+	            if (x<0)
+	                return C+(int)((Long.valueOf(powMod%C)*Long.valueOf(A%C))%C);
+	            else
+	                return x;
+	        }
+	    }
 }
