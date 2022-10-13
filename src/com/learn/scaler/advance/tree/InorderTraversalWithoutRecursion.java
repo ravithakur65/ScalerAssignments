@@ -59,7 +59,15 @@ public class InorderTraversalWithoutRecursion {
         tree.right.left = new TreeNode(3);
         System.out.println(inorderTraversal(tree));
 	}
-
+/*
+ *  1. Create an empty stack to store nodes. 
+	2. Push the root node to the stack. 
+	3. Run a loop while the stack is not empty 
+	4. Pop the top node from stack. 
+	5. Print the popped node. 
+	6. Store all the children of popped node onto the stack. We must store children from right to left so that leftmost node is popped first. 
+	7. If stack is empty then we are done.
+ */
 	public static ArrayList<Integer> inorderTraversal(TreeNode A) {
 
 		ArrayList<Integer> result = new ArrayList<Integer>();

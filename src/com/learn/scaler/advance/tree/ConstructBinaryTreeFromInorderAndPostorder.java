@@ -56,9 +56,9 @@ public class ConstructBinaryTreeFromInorderAndPostorder {
 		// TODO Auto-generated method stub
 		ArrayList<Integer> inorder = new ArrayList<>();
 		ArrayList<Integer> postorder = new ArrayList<>();
-		inorder.addAll(Arrays.asList(6, 1, 3, 2));
-		postorder.addAll(Arrays.asList(6, 3, 2, 1));
-		TreeNode result = buildTree(inorder, postorder);
+		inorder.addAll(Arrays.asList(1,2,3));
+		postorder.addAll(Arrays.asList(2,1,3));
+		TreeNode result = buildTreeAnotherMethod(inorder, postorder);
 		inOrder(result);
 		System.out.println();
 		postOrder(result);
