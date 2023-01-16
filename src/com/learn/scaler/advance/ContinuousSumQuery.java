@@ -1,3 +1,4 @@
+package com.learn.scaler.advance;
 /*
  * Problem Description
 There are A beggars sitting in a row outside a temple. Each beggar initially has an empty pot. When the devotees come to the temple, they donate some amount of coins to these beggars. Each devotee gives a fixed amount of coin(according to their faith and ability) to some K beggars sitting next to each other.
@@ -44,7 +45,10 @@ class CountinuousSumQuery {
     public static void main(String[] args) {
         int A = 5;
         int[][] B = { { 1, 2, 10}, { 2, 3, 20 }, { 2, 5, 25 } };
-        System.out.println(solve(A, B));
+        int[] result = solve(A, B);
+        for (int i : result) {
+            System.out.print(i + " ");
+        }
     }
 
     public static int[] solve(int A, int[][] B) {

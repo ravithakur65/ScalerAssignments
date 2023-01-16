@@ -5,7 +5,7 @@ class JavaModule01{
         String str = "Ravi";
         Boolean b = null;
         System.out.println(b);
-        EXIT_CODE.getNumVal();
+       
     }
 
     private static void print(String str) {
