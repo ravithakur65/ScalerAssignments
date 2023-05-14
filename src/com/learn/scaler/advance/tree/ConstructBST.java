@@ -6,6 +6,15 @@ public class ConstructBST {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(10);
+		list.add(5);
+		list.add(1);
+		list.add(7);
+		list.add(40);
+		list.add(50);
+		TreeNode root = construct(list);
+		
 
 	}
 	public static TreeNode construct(ArrayList<Integer> list) {
